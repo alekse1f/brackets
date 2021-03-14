@@ -1,4 +1,8 @@
-module.exports = function check(af, qt) {
+module.exports = function check(af, qts) {
+    let qt = "";
+    for (i = 0; i < qts.length; i++) {
+        qt += qts[i][0] + qts[i][1];
+    }
     const arr = af.split("");
     let st = [];
     console.log(arr, st);
